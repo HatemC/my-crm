@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import customers from "./customers"
+import { Component } from 'react';
+import CustomerList from "./customerList";
+import NavBar from './navBar';
 
-function App() {
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state= {
+      customers: customers
+    };
+  }
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <div className="container">
+        <div className="cards">
+          <CustomerList customers={this.state.customers} />
+        </div>
+      </div>
     </div>
-  );
+     );
+  };
 }
 
 export default App;
