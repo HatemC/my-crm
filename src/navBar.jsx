@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import ManageCustomer from './manageCustomer';
 
 class NavBar extends Component {
 
@@ -20,6 +21,9 @@ class NavBar extends Component {
           <div className="input-group-append">
           <button className="input-group-text" id="basic-addon2" onClick={this.handleChange} >cherche</button>
           </div>
+      </div>
+      <div>
+      <ManageCustomer />
       </div>
       <div>
         <img src="https://kitt.lewagon.com/placeholder/users/krokrob" className="avatar" alt="" />

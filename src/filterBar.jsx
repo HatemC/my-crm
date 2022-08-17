@@ -5,7 +5,8 @@ class FilterBar extends Component {
 
 handleClick = (Idopt) => {
   const ids = Idopt.target.id.split(" ");
-  const inputopt = document.getElementById(ids[0]).innerHTML;
+  console.log(ids[0]);
+  const inputopt = ids[0];
   const inputbutt = document.getElementById(Idopt.target.id).innerHTML;
   this.props.filterFunction(inputopt,inputbutt);
 }
@@ -19,9 +20,9 @@ handleClick = (Idopt) => {
           <button className="btn-ghost" id="optsex butthom" onClick={this.handleClick} >Homme</button>
         </div>
         <div>
-          <div className="filteroption"> Status marital</div>
-          <button className="btn-ghost" id="buttMar" >Marié(e)</button>
-          <button className="btn-ghost" id="buttCel" >Célibataire</button>
+          <div className="filteroption" id="optstatmar"> Status marital</div>
+          <button className="btn-ghost" id="optstatmar buttMar" onClick={this.handleClick} >Marié(e)</button>
+          <button className="btn-ghost" id="optstatmar buttCel" onClick={this.handleClick} >Célibataire</button>
         </div>
         <div>
           <div className="filteroption"> Enfant à charge </div>

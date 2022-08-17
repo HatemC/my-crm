@@ -4,7 +4,6 @@ import { Component } from 'react';
 import CustomerList from "./customerList";
 import NavBar from './navBar';
 import FilterBar from './filterBar';
-import ManageCustomer from './manageCustomer';
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +11,6 @@ class App extends Component {
     this.state= {
       customers: customers
     };
-
   }
 
   filterCustomer = (event) => {
@@ -30,9 +28,9 @@ class App extends Component {
     console.log(IdButt);
     console.log(customers[1][IdOpt]);
     let CustFil =[];
-    const filtredCust =customers.filter(customer => customer[IdOpt] === IdButt);
+    const filtredCust =this.state.customers.filter(customer => customer[IdOpt] === IdButt);
     console.log(filtredCust);
-    CustFil = filtredCust.length>0 ? filtredCust : customers;
+    CustFil = filtredCust.length > 0 ? filtredCust : this.state.customers;
     this.setState({
       customers: CustFil
     });
@@ -49,7 +47,6 @@ class App extends Component {
             <CustomerList customers={this.state.customers} />
           </div>
         </div>
-        <ManageCustomer />
       </div>
     </div>
      );
