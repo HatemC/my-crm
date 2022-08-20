@@ -7,6 +7,8 @@ const customers = [
     description: "Ingénieur commercial, marié deux enfants",
     optsex: "Homme",
     optstatmar: "Marié(e)",
+    optenfant: "Deux enfants",
+    optsitpro:"Salarié",
     id: 6
   },
   {
@@ -16,6 +18,8 @@ const customers = [
     description: "Actrice, célibataire un enfant",
     optsex: "Femme",
     optstatmar: "Célibataire",
+    optenfant: "Un enfant",
+    optsitpro: "Indépendant",
     id: 1
   },
   {
@@ -25,6 +29,9 @@ const customers = [
     description: "Cheffe d'entreprise, mariée trois enfants",
     optsex: "Femme",
     optstatmar: "Marié(e)",
+    optenfant: "Trois enfants et +",
+    optsitpro: "Indépendant",
+
     id: 2
   },
   {
@@ -34,6 +41,9 @@ const customers = [
     description: "Musicien, célibataire quatre enfants ",
     optsex: "Homme",
     optstatmar: "Célibataire",
+    optenfant: "Trois enfants et +",
+    optsitpro: "Indépendant",
+
     id: 3
   },
   {
@@ -43,6 +53,8 @@ const customers = [
     description: "Gestionnaire, divorcé deux enfants ",
     optstatmar: "Célibataire",
     optsex: "Homme",
+    optenfant: "Deux enfants",
+    optsitpro: "Salarié",
     id: 4
   },
   {
@@ -52,6 +64,8 @@ const customers = [
     description: "Professeur d'université, célibataire 3 enfants",
     optstatmar: "Célibataire",
     optsex: "Homme",
+    optenfant: "Trois enfants et +",
+    optsitpro: "Salarié",
     id: 5
   },
   {
@@ -61,6 +75,8 @@ const customers = [
     description: "Avocate, célibataire",
     optstatmar: "Célibataire",
     optsex: "Femme",
+    optenfant: "Pas d'enfant",
+    optsitpro: "Indépendant",
     id: 7
   },
   {
@@ -70,6 +86,8 @@ const customers = [
     description: "Artisan, célibataire",
     optstatmar: "Célibataire",
     optsex: "Homme",
+    optenfant: "Pas d'enfant",
+    optsitpro: "Indépendant",
     id: 8
   },
 
@@ -80,6 +98,8 @@ const customers = [
     description: "Professeur d'université, mariée 3 enfants",
     optsex: "Femme",
     optstatmar: "Marié(e)",
+    optenfant: "Trois enfants et +",
+    optsitpro: "Salarié",
     id: 9
   },
 
@@ -90,6 +110,8 @@ const customers = [
     description: "Informaticien, marié un enfant",
     optsex: "Homme",
     optstatmar: "Marié(e)",
+      optenfant: "Un enfant",
+      optsitpro: "Indépendant",
     id: 10
   },
 
@@ -100,6 +122,8 @@ const customers = [
     description: "Fonctionnaire, marié deux enfants",
       optstatmar: "Marié(e)",
     optsex: "Homme",
+      optenfant: "Deux enfants",
+      optsitpro: "Salarié",
     id: 11
   }
 ];
